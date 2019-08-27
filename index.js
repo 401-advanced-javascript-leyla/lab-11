@@ -4,6 +4,7 @@ require('dotenv').config();
 
 // Start up DB Server
 const mongoose = require('mongoose');
+const swagger = require('./src/swagger.js');
 const options = {
   useNewUrlParser:true,
   useCreateIndex: true,

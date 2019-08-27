@@ -10,7 +10,7 @@
 
 #### Documentation
 * [jsdoc](https://localhost:3000/docs/)
-
+* [swagger](http://localhost:3333/api-docs)
 
 ### Setup
 #### `.env` requirements
