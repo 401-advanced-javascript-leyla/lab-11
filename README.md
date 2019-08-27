@@ -1,7 +1,5 @@
 # LAB - 11
 
-## Deployment Lab
-
 ### Author: Jessica Walters, Leyla Li
 
 ### Links and Resources
@@ -31,4 +29,4 @@
 
 #### UML
 
-![UML Diagram]('./assests/lab-11-UML.JPG')
+![UML Diagram](./assests/lab-11-UML.JPG)
