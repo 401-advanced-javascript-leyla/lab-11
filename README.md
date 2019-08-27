@@ -6,7 +6,7 @@
 
 ### Links and Resources
 * [submission PR](https://github.com/401-advanced-javascript-leyla/lab-11/pulls)
-* [travis](https://travis-ci.com/401-advanced-javascript-leyla/lab-00)
+* [travis](https://www.travis-ci.com/401-advanced-javascript-leyla/lab-11/builds/124667808)
 
 #### Documentation
 * [jsdoc](https://localhost:3000/docs/)
