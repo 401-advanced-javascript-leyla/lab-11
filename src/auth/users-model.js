@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * User Model
+ * @module src/users-model
+ */
+
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jsonWebToken = require('jsonwebtoken');
@@ -21,11 +26,11 @@ users.pre('save', function(next) {
 });
 
 /**
-   *This checks for the user name 
-   *
-   * @param {auth}  
-   * @returns {object} user information
-   */
+ *This checks for the user name
+ *
+ * @param {auth}
+ * @returns {object} user information
+ */
 users.statics.authenticateBasic = function(auth) {
   let query = {username:auth.username};
   return this.findOne(query)

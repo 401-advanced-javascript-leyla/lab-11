@@ -8,14 +8,11 @@ const auth = require('./middleware.js');
 
 
 /**
-   *This adds a new user 
-   *
-   * @route POST /signup
-   * @param {req} request body
-   * @param {res} response 
-   * @param {next} middleware function
-   * @returns {object} object
-   */
+ * This adds a new user
+ *
+ * @route POST /signup
+ * @returns {object} object
+ */
 authRouter.post('/signup', (req, res, next) => {
   let user = new User(req.body);
   user.save()
@@ -30,18 +27,15 @@ authRouter.post('/signup', (req, res, next) => {
 
 
 /**
-   *This signs in an user 
-   *
-   * @route POST /signin
-   * @param {auth} authentication middleware
-   * @param {req} request body
-   * @param {res} response 
-   * @param {next} middleware function
-   * @returns {string} JWT
-   */
+ * This signs in an user
+ *
+ * @route POST /signin
+ * @returns {string} JWT
+ */
 authRouter.post('/signin', auth, (req, res, next) => {
   res.cookie('auth', req.token);
   res.send(req.token);
 });
+
 
 module.exports = authRouter;
