@@ -7,7 +7,8 @@
 * [travis](https://www.travis-ci.com/401-advanced-javascript-leyla/lab-11/builds/124667808)
 
 #### Documentation
-* [jsdoc](https://localhost:3000/docs/)
+* [deployed](https://jessica-401-lab-11.herokuapp.com/)
+* [jsdoc](https://jessica-401-lab-11.herokuapp.com/docs/)
 * [swagger](http://localhost:3333/api-docs)
 
 ### Setup
