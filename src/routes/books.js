@@ -8,8 +8,6 @@ const auth = require('../auth/middleware');
  *This gets all the stored books
  *
  * @route GET /books
- * @param {auth} middleware auth
- * @param {function} handleGetAll
  * @returns {object} books in the db
  */
 router.get('/books', auth, handleGetAll);
@@ -19,12 +17,17 @@ router.get('/books', auth, handleGetAll);
  *
  * @route GET /books/:id
  * @param {id} the book id
- * @param {function} handleGetOne
  * @returns {object} book by id from the db
  */
 router.get('/books/:id',auth, handleGetOne);
 
 // Route Handlers
+/**
+ *
+ * @param req
+ * @param res
+ * @param next
+ */
 function handleGetAll(req, res, next) {
   let books = {
     count: 3,
@@ -37,6 +40,12 @@ function handleGetAll(req, res, next) {
   res.status(200).json(books);
 }
 
+/**
+ *
+ * @param req
+ * @param res
+ * @param next
+ */
 function handleGetOne(req, res, next) {
   let book = {
     title:'Moby Dick',
